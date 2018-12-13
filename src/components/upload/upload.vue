@@ -276,8 +276,8 @@
                     _file.status = 'finished';
                     _file.response = res;
 
-                    this.$dispatch('on-form-change', _file);
                     this.onSuccess(res, _file, this.fileList);
+                    this.$dispatch('on-form-change', _file);
 
                     setTimeout(() => {
                         _file.showProgress = false;
